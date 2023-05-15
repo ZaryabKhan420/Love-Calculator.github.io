@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Images/background-image-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+}
+.box h2
+{
+    text-align: center;
+    color: #fff;
+    background-color: #E6154E;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 8px;
+}
+.inputs
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+}
+.inputs input
+{
+    height: 25px;
+    width: 150px;
+    margin: 0 5px;
+    border: none;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    color: #fff;
+}
+.btn
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+#clickbtn
+{
+    background-color: #00b4d8;
+    flex-basis: 80%;
+    padding: 7px 0;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: lighter;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Result-box
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+#Result
+{
+    margin-left: 15px;
+    width: 60px;
+    color: red;
+    font-weight: bold;
+    font-size: large;
+}
+.blessings
+{
+    border-top: 2px solid #00b4d8;
+    text-align: center;
+    padding-top: 6px;
+    margin-top: 3px;
+    color: #fff;
+}
+.Result-box label
+{
+    color: #fff;
+}
+
+@media (max-width: 768px)
+{
+    .inputs form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .inputs form label
+    {
+        display: grid;
+        place-items: center;
+        margin: 6px 0;
+    }
+    #clickbtn
+    {
+        background-color: #00b4d8;
+        flex-basis: 60%;
+        padding: 7px 0;
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: lighter;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .Result-box
+    {
+        flex-direction: column;
+    }
+    .blessings
+    {
+        font-size: 15px;
+    }
+    .Result-box label
+    {
+        font-size: 15px;
+        display: grid;
+        place-items: center;
+    }
+    @media (max-width: 330px)
+    {
+        #clickbtn
+        {
+            background-color: #00b4d8;
+            flex-basis: 70%;
+            padding: 7px 0;
+            border: none;
+            color: #fff;
+            font-size: 15px;
+            font-weight: lighter;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .inputs input
+        {
+            width: 100px;
+        }
+        .blessings
+        {
+            font-size: 13px;
+        }
+        .Result-box label
+        {
+            font-size: 13px;
+            place-items: center;
+        }
+        .Result-box label
+        {
+            place-items: center;
+        }
+    }
+    @media (max-width: 236px)
+    {
+        .content h2 
+        {
+            font-size: 20px;
+        }
+        .inputs input
+        {
+            width: 60px;
+        }
+        .Result-box label
+        {
+            display: grid;
+            place-items: center;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1023px)
+    {
+        .blessings
+        {
+            font-size: 16px;
+            font-weight: lighter;
+        }
+        .Result-box label
+        {
+            font-size: 16x;
+            display: grid;
+            place-items: center;
+            font-weight: lighter;
+        }
+    }
+}
